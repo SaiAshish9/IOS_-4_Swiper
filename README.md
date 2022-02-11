@@ -53,6 +53,11 @@ Right Click the View Group And Select New File. Select SwiftUIView and click on 
 option + command + enter
 ```
 
+## Global Search
+
+```
+cmd + shift + h 
+```
 
 ## ZStack
 
@@ -86,4 +91,73 @@ struct OnboardingView_Previews: PreviewProvider {
     }
 }
 ```
+ 
+ ## Components & Methods
+ 
+ ```
+ ForEach
+ @State
+ @AppStorage
+ @Environment
+ ZStack
+ VStack
+ HStack
+ Image
+ View
+ Text
+ TabView
+ PreviewProvider
+ LinearGradient
+ Divider
+ Spacer
+ DisclosureGroup
+ GroupBox
+ Group
+ Link
+ Button
+ NavigationView
+ List
+ ScrollView 
+ Toggle
+ NavigationLink
+ ```
+ 
+ ## Properties
+ 
+ ```
+ ContentView(fruits: fruitsData)
+ .previewDevice("iPhone 11 Pro")
+ .previewLayout(.fixed(width: 375, height: 60))
+ .preferredColorScheme(.dark)
+ .previewLayout(.sizeThatFits)
+ .padding(.horizontal, 16)
+ .padding(.vertical, 10)
+ HStack(spacing: 8)
+ Image(systemName: "arrow.right.circle")
+          .imageScale(.large)
+ .onAppear() {
+     withAnimation(.easeOut(duration: 0.5)) {
+      isAnimatingImage = true
+    }
+  }
+  .onDisAppear {}
+  // SwiftUI gives us equivalents to UIKit’s viewDidAppear() and viewDidDisappear() in the form of onAppear() and onDisappear(). 
+ .background(
+        Capsule().strokeBorder(Color.white, lineWidth: 1.25)
+      )
+ .accentColor(Color.white)
+ LinearGradient(gradient: Gradient(colors: fruit.gradientColors), startPoint: .topLeading, endPoint: .bottomTrailing)
+ Link("Wikipedia", destination: URL(string: "https://wikipedia.com")!)
+ Image(fruit.image)
+  .resizable()
+  .scaledToFit()
+  .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
+  .scaleEffect(isAnimating ? 1.0 : 0.6)
+   Text("If you wish, you can restart the application by toggle the switch in this box. That way it starts the onboarding process and you will see the welcome screen again.")
+   .padding(.vertical, 8)
+   .frame(minHeight: 60)
+   .layoutPriority(1)
+   .font(.footnote)
+   .multilineTextAlignment(.leading)
+ ```
  
