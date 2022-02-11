@@ -7,4 +7,10 @@
 6. Choose Both ( Any Appearance + Dark ) Cards at the Color Set Panel. Pick 8-bit Hexadecimal at the input 
 method and type desired hexcode.
 7. Drag and drop the color set files as well at the Assets.xcassets
+
+Accent Color (buttons, navigation items):
+It's a new dedicated color set created by default since xcode 12. It will be globally used by the OS in ios 14 app.
+
+
+AccentColor => Appearance -> Any Dark => SRGB Color System
 ```
