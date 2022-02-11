@@ -12,5 +12,5 @@ Accent Color (buttons, navigation items):
 It's a new dedicated color set created by default since xcode 12. It will be globally used by the OS in ios 14 app.
 
 
-AccentColor => Appearance -> Any Dark => SRGB Color System
+AccentColor => Appearance -> Any Dark => Content => SRGB Color System
 ```
