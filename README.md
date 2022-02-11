@@ -34,3 +34,30 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 ```
+
+## NOTE
+
+```
+cmd + click to wrap components inside other components
+```
+
+## CardView
+
+```
+Right Click the View Group And Select New File. Select SwiftUIView and click on the next button. 
+```
+
+## Show/Hide Preview
+
+```
+option + command + enter
+```
+
+
+## ZStack
+
+```
+SwiftUI has a dedicated stack type for creating overlapping content, which is useful if you want to place some text over a picture for example. It's called ZStack , and it works identically to the other two stack types.
+It's used to layer components on top of each other.
+```
+
