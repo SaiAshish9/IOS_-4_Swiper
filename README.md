@@ -6,4 +6,5 @@
 5. Select + icon at the bottom left corner ( where the assets are placed ) and choose color set
 6. Choose Both ( Any Appearance + Dark ) Cards at the Color Set Panel. Pick 8-bit Hexadecimal at the input 
 method and type desired hexcode.
+7. Drag and drop the color set files as well at the Assets.xcassets
 ```
