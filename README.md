@@ -175,4 +175,6 @@ struct Fruit: Identifiable {
   var nutrition: [String] 
 }
 ```
+
+## Apps = n * Scenes = m * Views
  
