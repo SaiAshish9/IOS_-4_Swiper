@@ -160,7 +160,14 @@ struct OnboardingView_Previews: PreviewProvider {
    .layoutPriority(1)
    .font(.footnote)
    .multilineTextAlignment(.leading)
- ```
+.navigationBarHidden(true)
+.edgesIgnoringSafeArea(.top)
+
+
+.sheet(isPresented: $isShowingSettings){
+SettingsView()
+}
+```
  
  ## DataModel
 
