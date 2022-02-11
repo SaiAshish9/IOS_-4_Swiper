@@ -41,7 +41,7 @@ struct ContentView_Previews: PreviewProvider {
 cmd + click to wrap components inside other components
 ```
 
-## CardView
+## New View
 
 ```
 Right Click the View Group And Select New File. Select SwiftUIView and click on the next button. 
@@ -61,4 +61,29 @@ SwiftUI has a dedicated stack type for creating overlapping content, which is us
 It's used to layer components on top of each other.
 ```
 
+```
+Select the button and using thrid option from the right , select it and modify appearance to dark.
+```
+
+## TabView 
+
+```
+import SwiftUI
+struct OnboardingView: View {
+    var body: some View {
+        TabView {
+            ForEach(0..<5){
+                item in FruitCardView()
+            }
+        }
+        .tabViewStyle(PageTabViewStyle())
+        .padding(.vertical,20)
+    }
+}
+struct OnboardingView_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardingView()
+    }
+}
+```
  
