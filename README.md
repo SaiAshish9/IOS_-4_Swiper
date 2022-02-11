@@ -97,6 +97,7 @@ struct OnboardingView_Previews: PreviewProvider {
  ```
  ForEach
  @State
+ @main
  @AppStorage
  @Environment
  ZStack
@@ -160,4 +161,18 @@ struct OnboardingView_Previews: PreviewProvider {
    .font(.footnote)
    .multilineTextAlignment(.leading)
  ```
+ 
+ ## DataModel
+
+```
+struct Fruit: Identifiable {
+  var id = UUID()
+  var title: String
+  var headline: String
+  var image: String
+  var gradientColors: [Color]
+  var description: String
+  var nutrition: [String] 
+}
+```
  
