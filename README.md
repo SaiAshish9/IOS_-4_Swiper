@@ -13,4 +13,20 @@ It's a new dedicated color set created by default since xcode 12. It will be glo
 
 
 AccentColor => Appearance -> Any Dark => Content => SRGB Color System
+
+Basic Structure Of ContentView :
+
+import SwiftUI
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, world!")
+            .padding()
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
 ```
